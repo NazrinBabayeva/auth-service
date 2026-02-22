@@ -1,0 +1,53 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: nezrin
+      changes:
+        - createTable:
+            tableName: users
+            columns:
+              - column:
+                  name: id
+                  type: BIGSERIAL
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+
+              - column:
+                  name: name
+                  type: VARCHAR(100)
+
+              - column:
+                  name: surname
+                  type: VARCHAR(100)
+
+              - column:
+                  name: birthdate
+                  type: DATE
+
+              - column:
+                  name: fin
+                  type: VARCHAR(20)
+
+              - column:
+                  name: account
+                  type: VARCHAR(50)
+
+              - column:
+                  name: email
+                  type: VARCHAR(150)
+                  constraints:
+                    unique: true
+
+              - column:
+                  name: password
+                  type: VARCHAR(255)
+
+              - column:
+                  name: address
+                  type: VARCHAR(255)
+
+              - column:
+                  name: account_balance
+                  type: DOUBLE PRECISION
+                  defaultValueNumeric: 0
