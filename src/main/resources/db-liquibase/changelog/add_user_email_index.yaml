@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20260227-1-add-email-index
+      author: nazrin
+      changes:
+        - createIndex:
+            indexName: idx_user_email
+            tableName: users
+            unique: true
+            columns:
+              - column:
+                  name: email

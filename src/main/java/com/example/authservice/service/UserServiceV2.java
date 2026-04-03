@@ -6,13 +6,12 @@ import com.example.authservice.model.entity.User;
 import com.example.authservice.repository.UserRepository;
 import com.example.authservice.mapper.UserMapper;
 import lombok.RequiredArgsConstructor;
-import org.mapstruct.Mapper;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
-public class UserService {
+public class UserServiceV2 {
 
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;

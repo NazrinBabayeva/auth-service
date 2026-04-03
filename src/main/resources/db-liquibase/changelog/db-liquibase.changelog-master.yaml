@@ -1,3 +1,5 @@
 databaseChangeLog:
   - include:
       file: db-liquibase/changelog/001-create-users.yaml
+  - include:
+      file: db-liquibase/changelog/add_user_email_index.yaml
