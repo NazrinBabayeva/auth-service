@@ -30,7 +30,6 @@ public class SecurityConfig {
     private final UserRepository userRepository;
 
     @Bean
-    //authentication
     public UserDetailsService userService() {
 //        UserDetails admin = User.withUsername("Basant")
 //                .password(encoder.encode("Pwd1"))

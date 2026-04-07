@@ -18,7 +18,7 @@ public class JwtUtils {
             "SuperSecretKeySuperSecretKeySuperSecretKeySuperSecretKeySuperSecretKeySuperSecretKeySuperSecretKeySuperSecretKey".getBytes()
     );
 
-    private final long jwtExpirationMs = 1000 * 60 * 60 * 24; // 24 saat
+    private final long jwtExpirationMs = 1000 * 60 * 60 * 24;
 
     public String generateToken(String email) {
         return Jwts.builder()
